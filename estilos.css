@@ -3,7 +3,7 @@ body {
   padding: 0;
   font-family: Helvetica, Arial, sans-serif;
   color: #666;
-  background: #f2f2f2;
+  background: #002b36;
   font-size: 1em;
   line-height: 1.5em;
   padding-top: 80px; 
@@ -21,9 +21,10 @@ p {
   margin: 0 0 1.5em 0;
 }
 
-img {
-  max-width: 10%;
-  height: auto;
+
+#imagen-logoc {
+    max-width: 10%;
+    height: auto;
 }
 #main-header {
   background: #333;
@@ -39,6 +40,8 @@ img {
   float: left;
   padding: 15px 0 0 20px;
   text-decoration: none;
+  max-width: 15%;
+  height: auto;
 }
 #logo-header:hover {
   color: #0b76a6;
