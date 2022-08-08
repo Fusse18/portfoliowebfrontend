@@ -1,4 +1,5 @@
 
+  
 
 #imagen-logoc {
   width: 50px;
@@ -11,22 +12,6 @@
   text-decoration: none;
   width: 120px;
   height: auto;
-}
-#logo-header:hover {
-  color: #0b76a6;
-}
-
-#logo-header .site-name {
-  display: block;
-  font-weight: 700;
-  font-size: 1.2em;
-}
-
-#logo-header .site-desc {
-  display: block;
-  font-weight: 300;
-  font-size: 0.8em;
-  color: #999;
 }
 
 .btn {
@@ -41,7 +26,7 @@
 
 .btn-green {
   color: rgb(255, 255, 255);
-  background-color: #333;
+  background-image: var(--bs-gradient);
 }
 
 .btn-green:hover {
@@ -51,17 +36,17 @@
 
 .btn-red {
   color: rgb(255, 255, 255);
-  background-color: #333;
+  background-image: var(--bs-gradient);
 }
 
 .btn-red:hover {
-  background-color: rgb(223, 49, 18);
+  background-color: rgb(212, 75, 51);
   transition: all 0.5s ease 0s;
 }
 
 .btn-yellow {
   color: rgb(255, 255, 255);
-  background-color: #333;
+  background-image: var(--bs-gradient);
 }
 
 .btn-yellow:hover {
@@ -71,7 +56,7 @@
 
 .btn-violet {
   color: rgb(255, 255, 255);
-  background-color: #333;
+  background-image: var(--bs-gradient);
 }
 
 .btn-violet:hover {
@@ -81,18 +66,18 @@
 
 .btn-blue {
   color: rgb(255, 255, 255);
-  background-color: #333;
+  background-image: var(--bs-gradient);
 }
 
 .btn-blue:hover {
-  background-color: rgb(18, 32, 223);
+  background-color: rgb(64, 73, 201);
   transition: all 0.5s ease 0s;
 }
 
 .btn-orange {
   color: rgb(255, 255, 255);
-  background-color: #333;
-  float: right;
+  background-image: var(--bs-gradient);
+
 }
 
 .btn-orange:hover {
