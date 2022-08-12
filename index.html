@@ -17,19 +17,20 @@
 </head>
 
 <body>
-    <div class="container-fluid">
+
+    <div class="container-fluid " id="home">
         <div class="row bg-dark bg-gradient">
             <div class="col">
-                <nav class="navbar-nav">
+                <nav class="navbar-nav bg-dark bg-gradient">
                     <div>
                         <div>
                             <img src="Imagenes/APLogo-20-20.png" alt="" id="logo-header">
                         </div>
                         <div class="btn-group position-absolute top-0 start-50 translate-middle-x" role="button">
-                            <a href="#" class="btn btn-green">Inicio</a>
-                            <a href="#" class="btn btn-yellow">Sobre mi</a>
-                            <a href="#" class="btn btn-red">Curriculum</a>
-                            <a href="#" class="btn btn-blue">Contacto</a>
+                            <a href="#home" class="btn btn-green">Inicio</a>
+                            <a href="#about" class="btn btn-yellow">Sobre mi</a>
+                            <a href="#project" class="btn btn-red">Curriculum</a>
+                            <a href="#contacto" class="btn btn-blue">Contacto</a>
                         </div>
                         <div class="position-absolute top-0 end-0">
                             <a href="#" class="btn btn-orange">Log In</a>
@@ -39,37 +40,38 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="col">
-                <section>
+        <section class="position-sticky top-0">
+            <div class="row text-bg-primary p-3">
+                <div class="col">
                     <div class="row">
-                        <div class="col text-bg-primary">
-                            <h1>Hola,Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                printer took a galley of type and scrambled it to make a type specimen book. It has
-                                survived not only five centuries, but also the leap into electronic typesetting,
-                                remaining essentially unchanged. It was popularised in the 1960s with the release of
-                                Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                                publishing software like Aldus PageMaker including versions of Lorem Ipsum.</h1>
+                        <div class="col">
+                            <h1>Hola,</h1>
                             <p>Mi nombre es Nicolás</p>
                         </div>
-                        <div class="col">IMAGEN DE FONDO Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
-                            1500s, when an unknown printer took a galley of type and scrambled it to make a type
-                            specimen book. It has survived not only five centuries, but also the leap into electronic
-                            typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
-                            release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                            publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+                        <div class="col">IMAGEN DE FONDO </div>
                     </div>
-                </section>
+                </div>
             </div>
-        </div>
-
-        <div class="row">
-            <div class="col">
-                <section>
-                    <div class="row text-bg-dark">
+        </section>
+        <section class="position-sticky top-0" id="about">
+            <div class="row">
+                <div class="col">
+                    <div class="row">
                         <div class="col">
+                            <h1>Imagen</h1>
+                            <p>sobre mi</p>
+                        </div>
+                        <div class="col">IMAGEN DE FONDO </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="position-sticky top-0" id="project">
+            <div class="row">
+                <div class="col">
+
+                    <div class="row text-bg-dark">
+                        <div class="col ">
                             <img src="Imagenes/html5.png" alt="" id="imagen-logoc" class="img-fluid">
                             <img src="Imagenes/css.png" alt="" id="imagen-logoc" class="img-fluid">
                             <img src="Imagenes/bootstrap.png" alt="" id="imagen-logoc" class="img-fluid">
@@ -100,18 +102,23 @@
                             publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                         </div>
                     </div>
-                </section>
-            </div>
-        </div>
 
-        <div class="row text-bg-dark p-3">
-            <div class="col">
-                <footer>
+                </div>
+            </div>
+
+        </section>
+        <section class="position-sticky top-0" id="contacto">
+            <div class="row text-bg-dark p-3">
+                <div class="col">
+
                     contacto: email, redes sociales
-                </footer>
-            </div>
-        </div>
 
+                </div>
+            </div>
+        </section>
+
+  
+ <script src="output/typescript.js"></script>
 
     </div>
     <!-- bootstrap JS-->
