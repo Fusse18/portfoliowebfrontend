@@ -18,23 +18,27 @@
 
 <body>
 
-    <div class="container-fluid " >
-        <div class="row bg-dark bg-gradient position-sticky top-0">
+    <div class="container-fluid">
+        <div class="row bg-dark bg-dark position-sticky top-0">
             <div class="col">
-                <nav class="navbar-nav bg-dark bg-gradient ">
-                    <div>
+                <nav class="navbar navbar-expand-lg bg-dark">
+                    <div class="container-fluid">
                         <div>
                             <img src="Imagenes/APLogo-20-20.png" alt="" id="logo-header">
                         </div>
-                        <div class="btn-group position-absolute top-0 start-50 translate-middle-x" role="button">
-                            <a href="#home" class="btn btn-green">Inicio</a>
-                            <a href="#about" class="btn btn-yellow">Sobre mi</a>
-                            <a href="#project" class="btn btn-red">Curriculum</a>
-                            <a href="#contacto" class="btn btn-blue">Contacto</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse btn-group position-absolute top-0 start-50 translate-middle-x" id="navbarNav">
+                            <button href="#home" class="btn btn-green">Inicio</button>
+                            <button href="#about" class="btn btn-yellow">Sobre mi</button>
+                            <button href="#project" class="btn btn-red">Curriculum</button>
+                            <button href="#contacto" class="btn btn-blue">Contacto</button>
+                            <button href="#" class="btn btn-orange">Log In</button>
                         </div>
-                        <div class="position-absolute top-0 end-0">
-                            <a href="#" class="btn btn-orange">Log In</a>
-                        </div>
+                        
                     </div>
                 </nav>
             </div>
@@ -117,8 +121,8 @@
             </div>
         </section>
 
-  
- <script src="output/typescript.js"></script>
+
+        <script src="output/typescript.js"></script>
 
     </div>
     <!-- bootstrap JS-->
