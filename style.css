@@ -6,7 +6,8 @@
  }
 
  body{
-  background-color: #333;
+  background-color: rgb(255, 255, 255);
+  
  }
 
 #nav {
@@ -15,11 +16,11 @@
   position: fixed;
   top: 0px;
   width: 100%;
-  
+ 
 }
 
 #nav a {
-  float: left;
+  
   display: block;
   color: white;
   float: right;
@@ -33,10 +34,13 @@
  
 }
 
-h1{
+.h1{
   font-size: 25px;
+  text-align: center;
 }
-
+.p{
+  text-align: center;
+}
 ul {
   list-style: none;
 }
@@ -58,13 +62,13 @@ a {
 
 .foto {
   background-color: rgb(199, 152, 66);
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border: solid;
-  border-radius: 50px;
+  border-radius: 100px;
   text-align: center;
-  margin-left: 70px;
-  margin-top: -72px;
+  margin-left: 100px;
+  margin-top: -150px;
 }
 
 .grid {
@@ -134,14 +138,15 @@ grid-template-columns: 500px;
   height: 100vh;
   position: sticky;
   width: 100%;
-  top: 0px;
+  top: 124px;
   background-color: rgb(40, 97, 49);
+ 
 }
 .section2 {
   height: 100vh;
   position: sticky;
   width: 100%;
-  top: 0px;
+  top: 124px;
   background-color: rgb(35, 119, 119);
 }
 
@@ -149,7 +154,7 @@ grid-template-columns: 500px;
   height: 100vh;
   position: sticky;
   width: 100%;
-  top: 0px;
+  top: 124px;
   background-color: rgb(71, 35, 119);
 }
 
@@ -157,7 +162,7 @@ grid-template-columns: 500px;
   height: 100vh;
   position: sticky;
   width: 100%;
-  top: 0px;
+  top: 124px;
   background-color: rgb(119, 35, 49);
 }
 
@@ -165,14 +170,14 @@ grid-template-columns: 500px;
   height: 100vh;
   position: sticky;
   width: 100%;
-  top: 0px;
-  background-color: rgb(119, 35, 49);
+  top: 124px;
+  background-color: rgb(118, 119, 35);
 }
 .section6 {
-  height: 100vh;
+  height: 845px;
   position: sticky;
   width: 100%;
-  top: 0px;
+  top: 124px;
   background-color: rgb(119, 76, 35);
 }
 
@@ -237,10 +242,11 @@ svg {
 .acerca{
 
 }
-
 .btn{
-
+  background-color: rgb(40, 97, 49);
+  float: right;
 }
+
 
 img{
   height: 35px;
