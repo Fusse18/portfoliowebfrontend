@@ -98,8 +98,8 @@ grid-template-columns: 500px;
 
 .a1 {
   grid-area: contenido;
- width: 500px;
- height: 200px;
+  width: 500px;
+  height: 200px;
 
 }
 
@@ -245,6 +245,8 @@ svg {
 .btn{
   background-color: rgb(40, 97, 49);
   float: right;
+
+border: 0px;
 }
 
 
