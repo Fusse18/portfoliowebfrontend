@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PortFolio</title>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -16,20 +16,25 @@
         <div id="nav">
             <header>
                 <div class="navbar">
-                    <p class="logo">Argentina Programa -
-                        #YoProgramo</p>
-
-                    <div id="mySidepanel" class="sidepanel">
-                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                        <a href="#about">Sobre mi</a>
-                        <a href="#Experiencia">Experiencia</a>
-                        <a href="#Educacion">Educacion</a>
-                        <a href="#Skills">Skills</a>
-                        <a href="#Proyectos">Proyectos</a>
-                        <a href="#contactos">Contactos</a>
-                        <a href="#">LogIn</a>
+                    <div class="topnav">
+                        <a href="#home" class="active">Argentina Programa -
+                            #YoProgramo</a>
+                        <!-- Navigation links (hidden by default) -->
+                        <div id="myLinks">
+                            <a href="#about" onclick="closeNav()">Sobre mi</a>
+                            <a href="#Experiencia" onclick="closeNav()">Experiencia</a>
+                            <a href="#Educacion" onclick="closeNav()">Educacion</a>
+                            <a href="#Skills" onclick="closeNav()">Skills</a>
+                            <a href="#Proyectos" onclick="closeNav()">Proyectos</a>
+                            <a href="#contactos" onclick="closeNav()">Contactos</a>
+                            <a href="#">LogIn</a>
+                        </div>
+                        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                        </a>
                     </div>
-                    <button class="openbtn" onclick="openNav()">&#9776;</button>
+
                 </div>
             </header>
         </div>
