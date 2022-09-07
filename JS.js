@@ -1,17 +1,4 @@
-let numero = document.getElementById("numero");
-let counter = 0;
-setInterval(() => {
-  if (counter == 65) {
-    clearInterval();
-  } else {
-    counter += 1;
-    numero.innerHTML = counter + "%";
-  }
-},20);
-
-
-  
-
+//boton edicion
 function cambiar_parrafo(){
   document.getElementById("edit-acercade").style.display="block";
   let texto = document.getElementById("text-acercade").innerText;
@@ -51,3 +38,12 @@ reader.onerror = function() {
 }
 
 
+/* Set the width of the sidebar to 250px (show it) */
+function openNav() {
+  document.getElementById("mySidepanel").style.width = "250px";
+}
+
+/* Set the width of the sidebar to 0 (hide it) */
+function closeNav() {
+  document.getElementById("mySidepanel").style.width = "0";
+} 

@@ -1,256 +1,266 @@
 * {
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
   box-sizing: border-box;
- }
+  scroll-behavior: smooth;
+}
 
- body{
+body {
   background-color: rgb(255, 255, 255);
-  
- }
-
-#nav {
-  background-color: rgb(51, 51, 51);
-  color: white;
-  position: fixed;
-  top: 0px;
-  width: 100%;
- 
+  font-family: sans-serif;
+}
+header {
+  background-color: rgb(43, 42, 42);
 }
 
-#nav a {
-  
-  display: block;
+header .logo{
+  margin: 0;
+  padding: 25px 30px;
+  font-weight: bold;
   color: white;
-  float: right;
-  padding: 15px;
+  font-size: 1.5em;
+}
+
+header .navbar {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+
+
+/* The sidepanel menu */
+.sidepanel {
+  height: 250px; /* Specify a height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+}
+
+/* The sidepanel links */
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
   text-decoration: none;
-}
-
-#nav a:hover {
-  background-color: rgba(221, 221, 221, 0);
-  color: rgb(185, 109, 37);
- 
-}
-
-.h1{
   font-size: 25px;
-  text-align: center;
-}
-.p{
-  text-align: center;
-}
-ul {
-  list-style: none;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
 }
 
-li {
-  display: inline;
-  margin: 10px;
+/* When you mouse over the navigation links, change their color */
+.sidepanel a:hover {
+  color: #f1f1f1;
 }
 
-a {
-  text-decoration: none;
+/* Position and style the close button (top right corner) */
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
 }
 
-.banner {
-  background-color: rgb(119, 38, 38);
-  height: 50vh;
-  padding: 0;
+/* Style the button that is used to open the sidepanel */
+.openbtn {
+  font-size: 15px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  margin-top: 10px;
+  border-radius: 50%;
 }
 
-.foto {
-  background-color: rgb(199, 152, 66);
-  width: 150px;
-  height: 150px;
-  border: solid;
-  border-radius: 100px;
-  text-align: center;
-  margin-left: 100px;
-  margin-top: -150px;
-}
-
-.grid {
-  
-  display: grid;
-  border: solid;
-  grid-template-areas:
-    "cabecera cabecera"
-    "contenido lateral"
-    "contenido2 lateral2"
-    "contenido3 lateral3";
-grid-template-columns: 500px;
-
-}
-
-.caja {
-  border: 1px solid black;
-  
- 
-}
-
-.a0 {
-  grid-area: cabecera;
-  height: 50px;
-  text-align: center;
-}
-
-.a1 {
-  grid-area: contenido;
-  width: 500px;
-  height: 200px;
-
-}
-
-.a2 {
-  grid-area: contenido2 ;
-  width: 500px;
-  height: 200px;
-}
-
-.a3 {
-  grid-area: contenido3 ;
-  width: 500px;
-  height: 200px;
-}
-.a4 {
-  grid-area:  lateral;
-  height: 200px;
-}
-
-.a5 {
-  grid-area:  lateral2;
-  height: 200px;
-}
-
-.a6 {
-  grid-area:  lateral3;
-  height: 200px;
-}
-
-.container {
-  position: relative;
-  width: 100%;
+.openbtn:hover {
+  background-color: rgb(218, 218, 218);
 }
 
 .section1 {
-  height: 100vh;
-  position: sticky;
+  background-color: rgb(3, 3, 3);
+  height: 85vh;
   width: 100%;
-  top: 124px;
-  background-color: rgb(40, 97, 49);
- 
 }
-.section2 {
-  height: 100vh;
-  position: sticky;
+
+.banner {
+  position: relative;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("img/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 61vh;
   width: 100%;
-  top: 124px;
-  background-color: rgb(35, 119, 119);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.acerca {
+  background-color: lightcoral;
+  height: 24vh;
+  text-align: center;
+}
+.acerca h1 {
+  font-size: 2em;
+  text-align: center;
+}
+
+.acerca p {
+  font-size: 1em;
+  text-align: center;
+}
+
+.foto {
+  background-color: lightblue;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+}
+
+.section2 {
+  background-color: rgb(30, 30, 30);
+  height: 100vh;
+  color: white;
+  padding: 150px 12px;
+  text-align: center;
+  margin-top: 0;
+}
+.section2 h2{
+margin-top: 0;
+font-size: 3em;
+}
+
+.section2 p {
+  display: none;
+}
+
+.section2 .carta {
+  background-size: cover;
+  background-position: center center;
+  padding: 50px;
+  margin: 20px;
+  border-radius: 15px;
+}
+
+.carta:nth-child(1) {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("img/frontend.jpg");
+
+}
+
+.carta:nth-child(2) {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("img/full-stack.jpg");
+}
+
+.carta:nth-child(3) {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("img/");
 }
 
 .section3 {
+  background-color: rgb(255, 255, 255);
   height: 100vh;
-  position: sticky;
-  width: 100%;
-  top: 124px;
-  background-color: rgb(71, 35, 119);
+  color: rgb(0, 0, 0);
+  padding: 150px 12px;
+  text-align: center;
+  margin-top: 0;;
+}
+
+.section3 h2{
+  margin-top: 0;
+  font-size: 3em;
+  }
+
+.section3 p {
+  display: none;
+}
+
+.section3 .carta1 {
+  background-size: cover;
+  background-position: center center;
+  padding: 50px;
+  margin: 20px;
+  border-radius: 15px;
+}
+
+.carta1:nth-child(1) {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("img/");
+
+}
+
+.carta1:nth-child(2) {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("img/");
+}
+
+.carta1:nth-child(3) {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("img/");
 }
 
 .section4 {
+  background-color: lightsalmon;
   height: 100vh;
-  position: sticky;
-  width: 100%;
-  top: 124px;
-  background-color: rgb(119, 35, 49);
 }
 
 .section5 {
-  height: 100vh;
-  position: sticky;
-  width: 100%;
-  top: 124px;
-  background-color: rgb(118, 119, 35);
+  background-color: lightseagreen;
+  height: 97.5vh;
 }
+
 .section6 {
-  height: 845px;
-  position: sticky;
-  width: 100%;
-  top: 124px;
-  background-color: rgb(119, 76, 35);
+  background-color: lightskyblue;
 }
 
-
-.body {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.btn1 {
+  font-size: 1em;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  color: white;
+  background-color: blueviolet;
 }
 
-.skill {
-  width: 160px;
-  height: 160px;
-}
-
-.outer {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  padding: 20px;
-  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
-    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
-}
-
-.inner {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
-    inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
-    -0.5px -0.5px 0px rgba(255, 255, 255, 1),
-    0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
-}
-
-#numero {
-  font-weight: 600px;
-}
-
-circle {
-  fill: none;
-  stroke: url(#GradientColor);
-  stroke-width: 20px;
-  stroke-dasharray: 472;
-  stroke-dashoffset: 472;
-  animation: anim 2s linear forwards;
-}
-
-svg {
-  position: absolute;
-}
-
-@keyframes anim {
-  100% {
-    stroke-dashoffset: 165;
-  }
-}
-.acerca{
-
-}
-.btn{
-  background-color: rgb(40, 97, 49);
-  float: right;
-
-border: 0px;
-}
-
-
-img{
-  height: 35px;
-  
+button:hover {
+  background-color: rgb(96, 57, 133);
 }
