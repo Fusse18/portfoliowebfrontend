@@ -50,5 +50,6 @@ function myFunction() {
 
 function closeNav() {
   document.getElementById("myLinks").style.display = "none";
- 
-} 
+}
+
+

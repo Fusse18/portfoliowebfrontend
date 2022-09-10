@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PortFolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 
 </head>
 
@@ -17,8 +17,12 @@
             <header>
                 <div class="navbar">
                     <div class="topnav">
-                        <a href="#home" class="active">Argentina Programa -
-                            #YoProgramo</a>
+                        <div class="active">
+                            <img src="/img/APLogo-20-20.png" alt="" class="logo">
+                            <a href="#home">Argentina
+                                Programa -
+                                #YoProgramo</a>
+                        </div>
                         <!-- Navigation links (hidden by default) -->
                         <div id="myLinks">
                             <a href="#about" onclick="closeNav()">Sobre mi</a>
@@ -43,7 +47,6 @@
             <div class="section1">
 
                 <div class="banner">
-                    <Img></Img>
                     <div class="posfoto">
                         <div class="foto">
                             <Img></Img>
@@ -57,9 +60,11 @@
                     <p id="text-acercade">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quam
                         voluptatum in. Vitae assumenda ullam suscipit, exercitationem, possimus excepturi laborum error
                         sit ipsam dolorum, iste deleniti reiciendis rerum minima sed.</p>
-                    <button class="boton" onclick="cambiar_parrafo()"><img src="" alt="">editar</button>
+                        <input id="edit-acercade" type="text" oninput="myFunction2(this.value)" style="display:none">
+                    <button class="btn" onclick="cambiar_parrafo()"><img src="" alt="">editar</button>
+                   
                 </div>
-                <input id="edit-acercade" type="text" oninput="myFunction2(this.value)" style="display:none">
+                
             </div>
             <div id="Experiencia">
 
@@ -70,34 +75,39 @@
                             <h3>titulo carta1
 
                             </h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nesciunt,
-                                necessitatibus
-                                labore placeat vero ab culpa magnam enim quo molestias temporibus modi eveniet
-                                voluptatem,
-                                perferendis consectetur excepturi rerum voluptas exercitationem!</p>
-                            <button class="btn1">+Info</button>
+                            <span id="hideText1" class="hideText">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nesciunt,
+                                    necessitatibus
+                                    labore placeat vero ab culpa magnam enim quo molestias temporibus modi eveniet
+                                    voluptatem,
+                                    perferendis consectetur excepturi rerum voluptas exercitationem!</p>
+                            </span>
+                            <button class="btn" onclick="showinfo1()">+Info</button>
                         </div>
                         <div class="carta">
                             <h3>titulo carta2
 
                             </h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nesciunt,
-                                necessitatibus
-                                labore placeat vero ab culpa magnam enim quo molestias temporibus modi eveniet
-                                voluptatem,
-                                perferendis consectetur excepturi rerum voluptas exercitationem!</p>
-                            <button class="btn1">+Info</button>
+                            <span id="hideText2" class="hideText">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nesciunt,
+                                    necessitatibus
+                                    labore placeat vero ab culpa magnam enim quo molestias temporibus modi eveniet
+                                    voluptatem,
+                                    perferendis consectetur excepturi rerum voluptas exercitationem!</p>
+                            </span>
+                            <button class="btn" onclick="showinfo2()">+Info</button>
                         </div>
                         <div class="carta">
                             <h3>titulo carta3
 
                             </h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nesciunt,
+                            <p id="hideText3" class="hideText">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Iusto nesciunt,
                                 necessitatibus
                                 labore placeat vero ab culpa magnam enim quo molestias temporibus modi eveniet
                                 voluptatem,
                                 perferendis consectetur excepturi rerum voluptas exercitationem!</p>
-                            <button class="btn1">+Info</button>
+                            <button class="btn" onclick="showinfo3()">+Info</button>
                         </div>
                     </div>
                 </div>
@@ -110,33 +120,36 @@
                                 <h3>titulo carta1
 
                                 </h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nulla veniam,
+                                <p id="hideText4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nulla
+                                    veniam,
                                     molestias esse eligendi quae fuga placeat sapiente eius? Qui iure voluptate nesciunt
                                     sint fugiat vero, nemo reprehenderit commodi quos?
 
                                 </p>
-                                <button type="" class="btn1">+Info</button>
+                                <button type="" class="btn" onclick="showinfo4()">+Info</button>
                             </div>
                             <div class="carta1">
                                 <h3>titulo carta2
 
                                 </h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nulla veniam,
+                                <p id="hideText5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nulla
+                                    veniam,
                                     molestias esse eligendi quae fuga placeat sapiente eius? Qui iure voluptate nesciunt
                                     sint fugiat vero, nemo reprehenderit commodi quos?
                                 </p>
 
-                                <button type="" class="btn1">+Info</button>
+                                <button type="" class="btn" onclick="showinfo5()">+Info</button>
                             </div>
                             <div class="carta1">
                                 <h3>titulo carta3
 
                                 </h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nulla veniam,
+                                <p id="hideText6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nulla
+                                    veniam,
                                     molestias esse eligendi quae fuga placeat sapiente eius? Qui iure voluptate nesciunt
                                     sint fugiat vero, nemo reprehenderit commodi quos?
                                 </p>
-                                <button type="" class="btn1">+Info</button>
+                                <button type="" class="btn" onclick="showinfo6()">+Info</button>
                             </div>
                         </div>
                     </div>
@@ -181,7 +194,7 @@
 
     </div>
 
-
+    <script src="boton.js"></script>
     <script src="JS.js"></script>
 </body>
 
